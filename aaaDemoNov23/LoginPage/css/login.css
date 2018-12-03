@@ -1,0 +1,218 @@
+/* PAGE LEVEL CSS */
+/* To avoid Text Distortion */
+body{
+    text-shadow: 0px 0px 1px #fff;
+}
+/* To avoid Button border induced by User agent on click */
+input[type="button"]:focus,button:focus {
+  outline: none !important;
+}
+/* START of CSS for Header Component */
+.navbar{
+    background-color: #000;
+}
+.navbar a{
+    color:#fff !important;
+    font-size:0.55rem;
+}
+.navbar a:hover{
+    color:#08e8de !important;
+}
+.outerNav{
+    padding-left:20%;
+    padding-right:45%;
+    background-color: #000;
+}
+/* END of CSS for Header Component */
+
+/* START of CSS for Login Component */
+.login {
+ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../../../images/adobeSummitColor.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    overflow: hidden;
+ height:89.8%;
+ width:100%;
+    padding-left:38%;
+    padding-top:15%;
+}
+.login-form {
+    padding-left:1.75rem;
+    padding-top:1.25rem;
+ background-color: #fff;
+ width:45%;
+ box-sizing:border-box;
+    border-radius:0.5rem;
+}
+.login label{
+ font-size:0.75em;
+ color:#000;
+ padding-top:0.1em;
+ max-width: 400px;
+}
+.login strong{
+ font-size:0.75em;
+ color:#000;
+}
+.login small{
+ font-size:0.75em;
+ color:#A4A4A4;
+}
+.login hr{
+ background-color: #F2F2F2;
+ height: 1px;
+ border: 0;
+ max-width:80%;
+ margin-left:0px;
+ margin-top:0.25rem !important;
+ margin-bottom:0.5rem !important;
+}
+.login input[type="text"],
+.login input[type="password"] {
+    display:block;
+ width: 90%;
+ line-height:1.75em;
+ font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+ margin-top:0.25em;
+ margin-bottom:1em;
+ border-radius:5px;
+ border:2px solid #f2f2f2;
+ outline:none;
+ padding-left:10px;
+}
+.login-form input[type="button"] {
+ height:30px;
+ max-width:300px;
+ background:#fff;
+ border:1px solid #c0c0c0;
+ border-radius:20px;
+ color: slategrey;
+ font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+ font-size: 0.75em;
+ font-weight:bold;
+ cursor:pointer;
+ padding-left:20px;
+ padding-right:20px;
+}
+.login-form .buttonGroup input[type="button"]:last-child {
+ margin-left:28%;
+    margin-top:0.75rem;
+}
+.login-form input::placeholder {
+ font-style:italic;
+ font-size:0.75rem;
+ color:#C0C0C0;
+}
+.login-form input:focus::placeholder {
+ font-style:italic;
+ font-size:0.75rem;
+ color:#000;
+}
+.login-form input[type="text"]:focus,input[type="password"]:focus{
+ border: 1px solid #000;
+ color:#000;
+}
+
+.login-form input[type="button"]:focus{
+ background-color: #000;
+ color:#fff;
+ font-weight:bold;
+}
+
+/*Media Queries*/
+@media only screen and (min-width : 150px) and (max-width : 530px){
+ .login-form h3 {
+ text-align:center;
+ margin:0;
+ }
+ .sign-up, .no-access {
+ margin:10px 0;
+ }
+ .login-button {
+ margin-bottom:10px;
+ }
+.login-form .buttonGroup input[type="button"]:last-child {
+ margin-left:5px;
+}
+
+}
+
+/* Start ==> Custom Checkbox Styles */
+/* Checkbox Container */
+.login-form .checkboxContainer {
+ max-width:max-content;
+ display: block;
+ position: relative;
+ padding-left: 25px;
+ cursor: pointer;
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.login-form .checkboxContainer input {
+ position: absolute;
+ opacity: 0;
+ cursor: pointer;
+ height: 0;
+ width: 0;
+}
+
+/* Create a custom checkbox */
+.login-form .checkmark {
+ box-sizing: border-box;
+ position: absolute;
+ top: 0.16rem;
+ left: 0;
+ height: 0.85rem;
+ width: 0.85rem;
+ background-color: #fff;
+ border:1px solid #000;
+ border-radius:2px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.login-form .checkboxContainer input:checked ~ .checkmark {
+ background-color: #000;
+ border:5px;
+ border-radius:3px;
+ background-color: #000;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.login-form .checkmark:after {
+ content: "";
+ position: absolute;
+ display: none;
+}
+
+/* Show the checkmark when checked */
+.login-form .checkboxContainer input:checked ~ .checkmark:after {
+ display: block;
+}
+
+/* Style the checkmark/indicator */
+.login-form .checkboxContainer .checkmark:after {
+    left: 0.27rem;
+    top: 0.15rem;
+    width: 0.25rem;
+    height: 0.45rem;
+    border: 1rem solid white;
+    border-width: 0 0.1rem 0.1rem 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* END <=== Custom Checkbox Styles */
+/* END of CSS for Login Component */
+
+/* START of CSS for Footer Component */
+.navbar .collapse{
+    padding-left:35rem;
+}
+.navbar .leftLogo{
+    padding-left:15rem;
+}
+/* END of CSS for Footer Component */

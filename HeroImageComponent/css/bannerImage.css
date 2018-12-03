@@ -1,0 +1,75 @@
+.aaaContainer {
+    margin:3rem;
+    color:#fff;
+}
+.aaaContainer .jumbotron{
+    padding-left:10rem;
+    padding-top:20rem;
+    border-radius:0rem !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../../images/adultBar.jpg");
+    /*,url("../../images/adultBar.jpg")*/
+    /* Set a specific height */
+    height: 80%;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.aaaContainer .jumbotron .rectButton{
+    width: 9rem;
+    height: 2rem;
+    font-size: 0.70rem;
+    background-color: #33DDFF;
+    border: 0;
+    font-family: Avenir;
+    font-weight: bold;
+    margin-bottom:1rem
+}
+.aaaContainer .jumbotron .h1Title{
+    font-size: 2rem;
+    font-family: Avenir;
+    font-weight: bold;
+}
+.aaaContainer .jumbotron .pTag{
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.aaaContainer .jumbotron .row{
+    margin-left:0.1rem;
+}
+.aaaContainer .jumbotron .row p{
+    margin-left:0.5rem;
+    line-height:1rem;
+    font-weight:bold;
+    font-style:Avenir;
+}
+.aaaContainer .jumbotron .row button{
+    margin-left:3rem;
+    position:relative;
+    bottom:0.5rem;
+    background-color: transparent;
+    border:2px solid #33DDFF;
+    color:#33DDFF;
+    font-family: Avenir;
+    font-weight:bold;
+    font-size:0.75rem;
+    border-radius:3rem;
+    padding-left:1rem;
+    padding-right:1rem;
+    
+}
+.aaaContainer .jumbotron .divider{
+    width: 0.5rem;
+    border-left: 2px solid black;
+    position: relative;
+    bottom: 0.5rem;
+    padding: 0.5rem;
+    margin-left: 1rem;
+}
+
+
+/*
+Maintain Aspect ratio : https://css-tricks.com/snippets/sass/maintain-aspect-ratio-mixin/
+*/

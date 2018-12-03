@@ -1,0 +1,200 @@
+/** COMMON CSS **/
+.aaaContainer{
+    background-color: #000;
+    height:80%;
+}
+body{
+    text-shadow: 0px 0px 1px #fff;
+}
+
+/** START - HEADER COMPONENT **/
+.navbar{
+    background-color: #000;
+}
+.navbar a{
+    color:#fff !important;
+    font-size:0.55rem;
+}
+.navbar a:hover, dropdown-item:hover{
+    color:#08e8de !important;
+    background-color: transparent;
+}
+.collapse ul li{
+    margin-right:1rem;
+}
+.collapse ul li div{
+    background-color: #000;
+    margin:.45rem 0 0;
+    border-radius:0;
+    font-size:0.55rem;
+}
+.navbar .leftLogo{
+    padding-left:15rem;
+}
+.navbar .rightLogo{
+    padding-right:15rem;
+}
+.navbar .collapse{
+    padding-left:8rem;
+}
+/** Media Queries for small devices **/
+@media (max-width: 575.98px) {
+.navbar .leftLogo{ padding-left:0rem; }
+}
+/** END - HEADER COMPONENT **/
+
+/** START - SIDE NAV COMPONENT **/
+.displayNone{
+    display:none;
+}
+.sideNav{
+  height:100%;
+  width: 65%;
+  position: fixed;
+  top: 3.5rem;
+  right: 3.5rem;
+  padding: 5rem;
+  background-color: #fff;
+  z-index: 1000;
+}
+ .sideNav {
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+.reveal {
+  -webkit-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%);
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+/** END - SIDE NAV COMPONENT **/
+
+/** START - HERO IMAGE COMPONENT **/
+.aaaContainer .jumbotron{
+    color:#fff;
+    padding-left:10rem;
+    padding-top:20rem;
+    border-radius:0rem !important;
+    background-image: url("../../../images/adobedaysBaloon.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.aaaContainer .jumbotronContent{
+    font-family: Avenir;
+    max-width:35%;
+}
+.aaaContainer .jumbotron .h1Title{
+    font-weight:bold;
+}
+.aaaContainer .jumbotron .pTag{
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.aaaContainer .jumbotron .divider{
+    width: 0.5rem;
+    border-left: 2px solid black;
+    position: relative;
+    bottom: 0.5rem;
+    padding: 0.5rem;
+    margin-left: 1rem;
+}
+/*
+Maintain Aspect ratio : https://css-tricks.com/snippets/sass/maintain-aspect-ratio-mixin/
+*/
+/** END - HERO IMAGE COMPONENT **/
+
+/** START - HORIZONTAL TAB MENU**/
+.aaaContainerForHorizontalMenu .mb-3{
+    margin-bottom:0rem !important;
+}
+.tab-content{
+  padding-top:1rem;
+  background: #fff;
+    height:15rem;
+}
+.nav{
+    padding-top:0.65rem;
+    padding-bottom:0.65rem;
+    padding-left:15rem !important;
+    background-color: #f2f2f2;
+}
+.nav-item{
+    padding-top:0.5rem;
+}
+.nav-item a{
+    font-family:Avenir;
+    font-size:0.6rem;
+    font-weight:500;
+    color:#333333;
+}
+.nav-item a.active{
+    background-color: transparent !important;
+    color:#000 !important;
+    font-weight: bold;
+}
+.aaaContainer .mb-3{
+    margin-bottom:0rem !important;
+}
+.tab-content{
+  height:18rem;
+  padding-top:1rem;
+  background: #fff;
+  padding-bottom:1rem;
+}
+.overviewContent{
+    line-height:1.25rem;
+    padding-top:2rem;
+    width:50%;
+    padding-left:16rem
+}
+.overviewContent h5{
+    font-family: Avenir;
+    font-weight: bold;
+    font-size: 1rem
+}
+.overviewContent p{
+    font-family: Avenir;
+    font-size: 0.65rem;
+}
+.divider{
+    width:45%;
+}
+.btnRegisterInterest{
+    box-sizing: border-box;
+    background-color: #33DDFF;
+    border:2px solid #33DDFF;
+    color:#000;
+    font-family: Avenir;
+    font-weight:bold;
+    font-size:1rem;
+    border-radius:3rem;
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+    height:2.5rem;
+}
+.btnRegisterInterest:hover{
+    cursor:pointer;
+}
+button:focus {
+  outline: none !important;
+}
+.boxOnHorizontalMenu{
+    width:20%;
+    height:40%;
+    font-family: Avenir;
+    background-color: #000;
+    color: #fff;
+    float:right;
+    position:relative;
+    right:5rem;
+    top:1rem;
+    
+}
+/** END - HORIZONTAL TAB MENU **/

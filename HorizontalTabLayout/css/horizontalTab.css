@@ -1,0 +1,80 @@
+.aaaContainer{
+    padding-left:3rem;
+    padding-right:3rem;
+    background-color: aliceblue
+}
+.nav{
+    padding-top:0.65rem;
+    padding-bottom:0.65rem;
+    padding-left:15rem !important;
+    background-color: #f2f2f2;
+}
+.nav-item{
+    padding-top:0.5rem;
+}
+.nav-item a{
+    font-family:Avenir;
+    font-size:0.6rem;
+    font-weight:500;
+    color:#333333;
+}
+.nav-item a.active{
+background-color: transparent !important;
+color:#000 !important;
+    font-weight: bold;
+}
+.aaaContainer .mb-3{
+    margin-bottom:0rem !important;
+}
+.tab-content{
+  padding-top:1rem;
+  background: #fff;
+    height:15rem;
+}
+.overviewContent{
+    width:60%;
+    padding-left:16rem
+}
+.overviewContent h5{
+    font-family: Avenir;
+    font-weight: bold;
+    font-size: 1rem
+}
+.overviewContent p{
+    font-family: Avenir;
+    font-size: 0.65rem;
+}
+.divider{
+    width:45%;
+}
+.btnRegisterInterest{
+    box-sizing: border-box;
+    background-color: #33DDFF;
+    border:2px solid #33DDFF;
+    color:#000;
+    font-family: Avenir;
+    font-weight:bold;
+    font-size:1rem;
+    border-radius:3rem;
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+    height:2.5rem;
+}
+.btnRegisterInterest:hover{
+    cursor:pointer;
+}
+button:focus {
+  outline: none !important;
+}
+.boxOnHorizontalMenu{
+    width:20%;
+    height:35%;
+    font-family: Avenir;
+    background-color: #000;
+    color: #fff;
+    float:right;
+    position:relative;
+    right:10.5rem;
+    top:1rem;
+    
+}

@@ -1,0 +1,164 @@
+/* PAGE LEVEL CSS */
+/* To avoid Text Distortion */
+body{
+    text-shadow: 0px 0px 1px #fff;
+}
+/* To avoid Button border induced by User agent on click */
+input[type="button"]:focus,button:focus {
+    outline: none !important;
+}
+
+/* Start of Top Nav */
+.header{
+    background-color: #000;
+    padding-top:0.15rem !important;
+}
+.header a{
+    color:#fff !important;
+    font-size:0.55rem;
+}
+.header a.nav-link:hover{
+    border-top:1px solid #33DDFF;
+}
+.header a.nav-link{
+    padding: 1rem 1rem;
+}
+.header a:hover, dropdown-item:hover{
+    color:#33DDFF !important;
+    background-color: transparent;
+}
+
+.header .collapse ul li{
+    margin-right:1rem;
+}
+.header .collapse ul li div{
+    background-color: #000;
+    margin:.45rem 0 0;
+    border-radius:0;
+    font-size:0.55rem;
+}
+.header .leftLogo{
+    padding-left:15rem;
+}
+.header .rightLogo{
+    padding-right:15rem;
+}
+.header .collapse{
+    padding-left:8rem;
+}
+
+/** Media Queries for small devices **/
+@media (max-width: 575.98px) {
+    .navbar .leftLogo{ padding-left:0rem; }
+}
+
+/**
+
+TO DO
+1. HINT to achieve top highlight on hover over of Nav menu items
+https://stackoverflow.com/questions/4131490/any-way-to-limit-border-length
+
+2. On hover over the menu item, add class 'show' else dropdown fades off and disrupts user action on it.
+.collapse ul li:hover >div {
+    display: block;
+}
+
+**/
+/* END of Top Nav */
+
+/* START of HERO IMAGE Component */
+.aaaContainerForHeroImage {
+    margin-top:0rem;
+    //padding-left:3rem;
+    //padding-right:3rem;
+    background-color: #000;
+    color:#fff;
+}
+.aaaContainerForHeroImage .heroImageHolder{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../../../images/AdobePremiumRL.jpg");
+    height: 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.aaaContainerForHeroImage .heroImageContent{
+    padding-left:15rem;
+    padding-top: 15rem;
+    max-width: 50%;
+    font-family: "Avenir";
+}
+.aaaContainerForHeroImage .heroImageContent h2{
+    font-weight: bold;
+    font-size: 2.75rem;
+}
+.aaaContainerForHeroImage .heroImageContent p{
+    font-size: 0.65rem;
+}
+/* END of HERO IMAGE Component */
+
+
+/* START of CSS for Cards Section */
+.aaaContainerForCardsEduIndex{
+    padding-left:15rem;
+    padding-top:5rem;
+    background-color: #fff;
+}
+.aaaContainerForCardsEduIndex .card-img-top{
+    border-radius:0rem;
+}
+.aaaContainerForCardsEduIndex .smallCard{
+    max-width:25%;
+    padding:0.65rem;
+}
+.aaaContainerForCardsEduIndex .mediumCard{
+    max-width:50%;
+    padding:0.65rem;
+}
+.aaaContainerForCardsEduIndex .largeCard{
+    max-width:75%;
+    padding:0.65rem;
+}
+.aaaContainerForCardsEduIndex .card-img-top{
+    height: 30%;
+    object-fit: cover;
+}
+.aaaContainerForCardsEduIndex .card-body{
+    background-color: #000;
+    color:#fff;
+    border-radius:0rem;
+    height:25%;
+}
+.aaaContainerForCardsEduIndex .card-body{
+    font-family: avenir;
+}
+.aaaContainerForCardsEduIndex .card-body small{
+    font-size:0.65rem;
+}
+.aaaContainerForCardsEduIndex .card-body svg{
+    fill:#33DDFF;
+    stroke:#33DDFF;
+}
+.arrow{
+    padding-top:2rem;
+    float:right;
+}
+/* END of CSS for Cards Section */
+
+/* START of CSS for Footer Component */
+.footer{
+    background-color: #000;
+}
+.footer .collapse{
+    padding-left:20rem;
+}
+.footer .leftLogo{
+    padding-left:10rem;
+}
+.footer a{
+    color:#fff !important;
+    font-size:0.55rem;
+}
+.footer a:hover{
+    color:#08e8de !important;
+    background-color: transparent;
+}
+/* END of CSS for Footer Component */

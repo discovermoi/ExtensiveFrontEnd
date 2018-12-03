@@ -1,0 +1,299 @@
+<link rel="stylesheet" type="text/css" href="../../vendor/bootstrap413/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/eventIndex.css">
+
+<nav class="navbar navbar-expand-lg navbar-dark header">
+    <!-- Brand Title and Left Logo will be replaced AAA svg-->
+    <div class="leftLogo">
+        <a class="navbar-brand" href="#">ACCESS ALL ADOBE
+            <img src="../../images/aaaBlue.png" width="30" height="30" alt=""></a>
+    </div>
+    <!-- Toggle Button to access menu on smaller screens -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Actual Navigation Menu -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Experiences
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">All Events</a>
+                    <a class="dropdown-item" href="#">My Upcoming Events</a>
+                    <a class="dropdown-item" href="#">My Past Events</a>
+                    <a class="dropdown-item" href="#">Gallery</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Educate
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    My Details
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- Left Logo -->
+    <a class="navbar-brand rightLogo d-none d-lg-block" href="#">
+        <img src="../../images/adobeLogo.svg" width="30" height="30" alt="">
+    </a>
+</nav>
+
+<!-- Banner Image Component -->
+<div class="aaaContainerForHeroImage">
+    <div class="heroImageHolder">
+            <div class="jumbotron">
+                <button class="rectButton">24-28 March,2018</button>
+                <h1 class="h1Title">Executive Experience at<br>Adobe Summmit</h1>
+                <p class="pTag"> Hosted by Company co</p>
+                <div class="row">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24">
+                        <title>clock</title>
+                        <path d="M12 1c-6.1 0-11 4.9-11 11s4.9 11 11 11 11-4.9 11-11-4.9-11-11-11zM12 21c-5 0-9-4-9-9s4-9 9-9c5 0 9 4 9 9s-4 9-9 9z"></path>
+                        <path d="M16.4 13.1l-3.4-1.7v-5.4c0-0.6-0.4-1-1-1s-1 0.4-1 1v6c0 0.4 0.2 0.7 0.6 0.9l4 2c0.1 0.1 0.2 0.1 0.4 0.1 0.4 0 0.7-0.2 0.9-0.6s0-1-0.5-1.3z"></path>
+                    </svg>
+                    <p>Please refer to agenda</p>
+                    <div class="divider"></div>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32">
+                        <title>location</title>
+                        <path d="M11.163 11.554c0-2.655 2.166-4.807 4.837-4.807s4.837 2.152 4.837 4.807-2.166 4.806-4.837 4.806-4.837-2.152-4.837-4.806zM7.777 12.154c0 2.011 2.454 6.25 2.454 6.25l5.769 9.614 5.438-9.613c0 0 2.785-4.27 2.785-6.25 0-4.513-3.682-8.171-8.223-8.171s-8.223 3.657-8.223 8.17z"></path>
+                    </svg>
+                    <p>The Venetian, Las Vegas</p>
+                    <button id="navbarSideButton">View Details</button>
+                </div>
+            </div>
+    </div>
+</div>
+
+<!-- Cards Tabs - Local and Global -->
+<div class="aaaContainerforCardEventIndex">
+    <ul class="outerTab nav nav-pills mb-3" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="pill" href="#global"
+               ole="tab" aria-controls="pills-home" aria-selected="true">Global</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link"
+               data-toggle="pill" href="#pills-local" role="tab" aria-controls="pills-profile"
+               aria-selected="false">Local</a>
+        </li>
+    </ul>
+    <div class="outerTabContent tab-content">
+        <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="pills-home-tab" id="global">
+            <div class="GlobalContent">
+                <ul class="globalTab nav nav-pills mb-3" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active"
+                           data-toggle="pill" href="#all"
+                           ole="tab" aria-controls="pills-home" aria-selected="true">All</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           data-toggle="pill" href="#tl" role="tab" aria-controls="pills-profile"
+                           aria-selected="false">Thought Leadership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           data-toggle="pill" href="#events" role="tab" aria-controls="pills-profile"
+                           aria-selected="false">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           data-toggle="pill" href="#sporting" role="tab" aria-controls="pills-profile"
+                           aria-selected="false">Sporting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           data-toggle="pill" href="#ca" role="tab" aria-controls="pills-profile"
+                           aria-selected="false">Customer Appreciation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           data-toggle="pill" href="#we" role="tab" aria-controls="pills-profile"
+                           aria-selected="false">Worldwide Experiences</a>
+                    </li>
+                </ul>
+                <div class="AllTabContent tab-content">
+                    <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="pills-home-tab" id="all">
+                        <div>
+                            <div class="row card-columns">
+                                <div class="largeCard card">
+                                    <img class="card-img-top" src="../../images/Symposium.jpg" >
+                                    <button class="cardImgBtn">29-31 June,2018</button>
+                                    <div class="card-body">
+                                        <small>SPEAKER</small>
+                                        <h5 class="card-title">Executive Experience at <br> Adobe Symposium</h5>
+                                        <div class="card-body-small">
+                                            <img src="../images/noPictureWhite.svg" width="15" height="15">
+                                            <small>10am - 6pm</small>
+                                            &emsp;&emsp;&emsp;&emsp;
+                                            <img src="../images/noPictureWhite.svg" width="15" height="15">
+                                            <small>86</small>
+                                        </div>
+                                        <div class="card-body-small">
+                                            <img src="../images/noPictureWhite.svg" width="15" height="15">
+                                            <small>Location Name</small>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small>Attending</small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../../images/photoGrapherSquatting.jpeg">
+                                    <button class="cardImgBtn">29-31 June,2018</button>
+                                    <div class="card-body">
+                                        <small>SPEAKER</small>
+                                        <h5 class="card-title">Executive Photography Experience</h5>
+                                        <div class="card-body-small">
+                                            <img src="../images/noPictureWhite.svg" width="15" height="15">
+                                            <small>10am - 6pm</small>
+                                            &emsp;&emsp;&emsp;&emsp;
+                                            <img src="../images/noPictureWhite.svg" width="15" height="15">
+                                            <small>86</small>
+                                        </div>
+                                        <div class="card-body-small">
+                                            <img src="../images/noPictureWhite.svg" width="15" height="15">
+                                            <small>Location Name</small>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Not attending</small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../../images/TLLunch.jpg" >
+                                    <button class="cardImgBtn">29-31 June,2018</button>
+                                    <div class="card-body">
+                                        <small>SPEAKER</small>
+                                        <h5 class="card-title">Thought Leadership Lunch</h5>
+                                        <div class="card-body-small">
+                                            <img src="../images/noPictureWhite.svg" width="15" height="15">
+                                            <small>10am - 6pm</small>
+                                            &emsp;&emsp;&emsp;&emsp;
+                                            <img src="../images/noPictureWhite.svg" width="15" height="15">
+                                            <small>86</small>
+                                        </div>
+                                        <div class="card-body-small">
+                                            <img src="../images/noPictureWhite.svg" width="15" height="15">
+                                            <small>Location Name</small>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Attending</small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../../images/lilyallen.jpg">
+                                    <button class="cardImgBtn">29-31 June,2018</button>
+                                    <div class="card-body">
+                                        <small>SPEAKER</small>
+                                        <h5 class="card-title">Lily Allen</h5>
+                                        <div class="card-body-small">
+                                            <img src="../images/noPictureWhite.svg" width="15" height="15">
+                                            <small>10am - 6pm</small>
+                                            &emsp;&emsp;&emsp;&emsp;
+                                            <img src="../images/noPictureWhite.svg" width="15" height="15">
+                                            <small>86</small>
+                                        </div>
+                                        <div class="card-body-small">
+                                            <img src="../images/noPictureWhite.svg" width="15" height="15">
+                                            <small>Location Name</small>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small>Attending</small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../../images/golf.jpg">
+                                    <button class="cardImgBtn">29-31 June,2018</button>
+                                    <div class="card-body">
+                                        <small>SPEAKER</small>
+                                        <h5 class="card-title">Executive Golf Day</h5>
+                                        <div class="card-body-small">
+                                            <img src="../images/noPictureWhite.svg" width="15" height="15">
+                                            <small>10am - 6pm</small>
+                                            &emsp;&emsp;&emsp;&emsp;
+                                            <img src="../images/noPictureWhite.svg" width="15" height="15">
+                                            <small>86</small>
+                                        </div>
+                                        <div class="card-body-small">
+                                            <img src="../images/noPictureWhite.svg" width="15" height="15">
+                                            <small>Location Name</small>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Not attending</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" aria-labelledby="pills-home-tab" id="tl">
+                        <div><h1>Content of Thought Leadership goes here</h1></div>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" aria-labelledby="pills-home-tab" id="events">
+                        <div><h1>Content of Events</h1></div>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" aria-labelledby="pills-home-tab" id="sporting">
+                        <div><h1>Sporting content</h1></div>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" aria-labelledby="pills-home-tab" id="ca">
+                        <div><h1>CA</h1></div>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" aria-labelledby="pills-home-tab" id="we">
+                        <div><h1>WE</h1></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" role="tabpanel" aria-labelledby="pills-profile-tab"></div>
+    </div>
+</div>
+
+<!--Footer-->
+<nav class="navbar navbar-expand-lg navbar-dark footer">
+    <!-- Left Logo -->
+    <a class="navbar-brand leftLogo" href="#">
+        <img src="../../images/adobeLogoRed.svg" width="20" height="20" alt="">
+    </a>
+
+    <div class="collapse navbar-collapse d-sm-block" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Copyright @ 2018 Adobe. All rights reserved &nbsp;&nbsp;/
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Privacy &nbsp;&nbsp;/
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Terms of Use &nbsp;&nbsp;/
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Cookies &nbsp;&nbsp;/
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    AdChoices &nbsp;&nbsp;/
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../../vendor/bootstrap413/js/bootstrap.min.js"></script>
+<script src="js/eventIndex.js"></script>

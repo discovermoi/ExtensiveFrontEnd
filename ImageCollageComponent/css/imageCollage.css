@@ -1,0 +1,15 @@
+.aaaContainer{
+    margin:3rem;
+}
+.row img {
+    object-fit: cover;
+    flex:auto;
+    height:35%;
+    margin-top: 0.5rem;
+    margin-left:0.5rem;
+}
+.row{
+    display: table;
+    margin-left:0.5rem;
+    margin-top: 0.5rem;
+}

@@ -1,0 +1,41 @@
+/* blue color of aaa #33DDFF*/
+
+/* START ===> Telephone Number with Country Code - Dropdown + TextBox merge */
+/* Note : Prefix the dropdown class with parent class or ID to differentiate the dropdowns
+ELSE the other dropdown will not have an arrow */
+.block{
+    margin:3rem;
+    padding-bottom:2rem;
+    border-bottom: 2px solid gray;
+}
+.row{
+    margin-left:0rem !important;
+}
+select.countryCode{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-top-right-radius:0px !important;
+    border-bottom-right-radius:0px !important;
+    border-right-width: 0rem;
+    width:3.5rem !important;
+    background-color: #F8F8F8 !important;
+    font-size:0.75rem;
+    background-image: url("../../icons/SVG/chevron-down12.svg");
+    background-repeat: no-repeat;
+    background-position: 2.1rem;
+}
+.phoneNumber{
+    width:62.5% !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+/* END <=== Telephone Number with Country Code - Dropdown + TextBox merge */
+
+/** aaa specific Form Field Height **/
+.form-control{
+    height:2rem !important;
+}
+/** aaa specific Width of Form Element **/
+.form-element{
+    max-width:25rem;
+}

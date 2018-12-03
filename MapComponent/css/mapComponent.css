@@ -1,0 +1,41 @@
+.aaaContainer{
+    margin:3rem;
+}
+#google-map{
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+	min-height: 480px;
+}
+.boxOnMap{
+    font-family: Avenir;
+    width: 35%;
+    height: 35%;
+    background-color: #000;
+    color: #fff;
+    padding: 3rem;
+    position: relative;
+    bottom: 13rem;
+    right: 3rem;
+    float:right;
+}
+.boxOnMap p{
+    font-weight:bold;
+}
+.boxOnMap small{
+    font-size:0.75rem
+}
+.boxOnMap a{
+    color:#33DDFF;
+    font-size:0.75rem;
+    font-weight: bold;
+}
+.boxOnMap a:hover{
+    text-decoration: none;
+    color:#33DDFF;
+}
+.boxOnMap svg{
+    margin-left:1rem;
+    fill:#33DDFF;
+    stroke:#33DDFF;
+}

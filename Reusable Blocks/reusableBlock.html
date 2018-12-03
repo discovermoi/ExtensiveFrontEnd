@@ -1,0 +1,42 @@
+<!--https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp-->
+<link rel="stylesheet" type="text/css" href="css/reusableBlock.css">
+<link rel="stylesheet" type="text/css" href="../vendor/bootstrap413/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../vendor/select2/css/select2.min.css">
+<link rel="stylesheet" type="text/css" href="../vendor/flags/css/flag-icon.min.css">
+
+<!-- Block 1 AAA Phone Number -->
+<div class="block">
+    <h6> DropDown + TextBox Merge = Telephone Number with Country Code dropdown</h6>
+    <div class="form-element">
+        <small>Phone Number</small>
+        <div class="row">
+            <select class="form-control countryCode" id="country-codes">
+                <option>+61</option>
+            </select>
+            <input class="form-control phoneNumber" placeholder="">
+        </div>
+    </div>
+</div>
+
+<!-- Block 2 AAA Form Field pair (Label and Input Field)-->
+<div class="block">
+    <div class="form-element">
+        <small for="email">Label</small>
+        <input type="email" class="form-control" placeholder="">
+    </div>
+</div>
+
+<!-- Block 3 AAA Countries Drop down with Flag icons-->
+<div class="block">
+<div class="form-element" id="country">
+    <small>Country</small>
+    <select name="country"></select>
+</div>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../vendor/bootstrap413/js/bootstrap.min.js"></script>
+<script src="../vendor/select2/js/select2.min.js"></script>
+<script src="js/reusableBlock.js"></script>

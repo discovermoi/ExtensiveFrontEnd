@@ -1,0 +1,135 @@
+<!-- bootstrap -->
+<link rel="stylesheet" type="text/css" href="../vendor/bootstrap413/css/bootstrap.min.css">
+<!-- /bootstrap -->
+
+
+<!-- LESS -->
+<link rel="stylesheet/less" type="text/css" href="../less/main.less" />
+<script src="../vendor/less/less.min.js" type="text/javascript"></script>
+<!-- /LESS -->
+
+<link rel="stylesheet" type="text/css" href="../vendor/slick181/slick/slick.css">
+
+<!-- SVG definitions -->
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <symbol id="icon-location" viewBox="0 0 32 32">
+            <title>location</title>
+            <path d="M11.163 11.554c0-2.655 2.166-4.807 4.837-4.807s4.837 2.152 4.837 4.807-2.166 4.806-4.837 4.806-4.837-2.152-4.837-4.806zM7.777 12.154c0 2.011 2.454 6.25 2.454 6.25l5.769 9.614 5.438-9.613c0 0 2.785-4.27 2.785-6.25 0-4.513-3.682-8.171-8.223-8.171s-8.223 3.657-8.223 8.17z"></path>
+        </symbol>
+        <symbol id="icon-clock" viewBox="0 0 24 24">
+            <title>clock</title>
+            <path d="M12 1c-6.1 0-11 4.9-11 11s4.9 11 11 11 11-4.9 11-11-4.9-11-11-11zM12 21c-5 0-9-4-9-9s4-9 9-9c5 0 9 4 9 9s-4 9-9 9z"></path>
+            <path d="M16.4 13.1l-3.4-1.7v-5.4c0-0.6-0.4-1-1-1s-1 0.4-1 1v6c0 0.4 0.2 0.7 0.6 0.9l4 2c0.1 0.1 0.2 0.1 0.4 0.1 0.4 0 0.7-0.2 0.9-0.6s0-1-0.5-1.3z"></path>
+        </symbol>
+        <symbol id="icon-check" viewBox="0 0 24 24">
+            <title>check</title>
+            <path d="M9 16.172l10.594-10.594 1.406 1.406-12 12-5.578-5.578 1.406-1.406z"></path>
+        </symbol>
+        <symbol id="icon-chevron-left" viewBox="0 0 24 24">
+            <title>chevron-left</title>
+            <path d="M15.422 7.406l-4.594 4.594 4.594 4.594-1.406 1.406-6-6 6-6z"></path>
+        </symbol>
+        <symbol id="icon-chevron-right" viewBox="0 0 24 24">
+            <title>chevron-right</title>
+            <path d="M9.984 6l6 6-6 6-1.406-1.406 4.594-4.594-4.594-4.594z"></path>
+        </symbol>
+        <symbol id="icon-close" viewBox="0 0 24 24">
+            <title>close</title>
+            <path d="M18.984 6.422l-5.578 5.578 5.578 5.578-1.406 1.406-5.578-5.578-5.578 5.578-1.406-1.406 5.578-5.578-5.578-5.578 1.406-1.406 5.578 5.578 5.578-5.578z"></path>
+        </symbol>
+        <symbol id="icon-chevron-up" viewBox="0 0 24 24">
+            <title>chevron-up</title>
+            <path d="M12 8.016l6 6-1.406 1.406-4.594-4.594-4.594 4.594-1.406-1.406z"></path>
+        </symbol>
+        <symbol id="icon-chevron-down" viewBox="0 0 24 24">
+            <title>chevron-down</title>
+            <path d="M16.594 8.578l1.406 1.406-6 6-6-6 1.406-1.406 4.594 4.594z"></path>
+        </symbol>
+        <symbol id="icon-arrow-left" viewBox="0 0 24 24">
+            <title>arrow-left</title>
+            <path d="M21 11.016v1.969h-14.156l3.563 3.609-1.406 1.406-6-6 6-6 1.406 1.406-3.563 3.609h14.156z"></path>
+        </symbol>
+        <symbol id="icon-minus" viewBox="0 0 24 24">
+            <title>minus</title>
+            <path d="M18.984 12.984h-13.969v-1.969h13.969v1.969z"></path>
+        </symbol>
+        <symbol id="icon-plus" viewBox="0 0 24 24">
+            <title>plus</title>
+            <path d="M18.984 12.984h-6v6h-1.969v-6h-6v-1.969h6v-6h1.969v6h6v1.969z"></path>
+        </symbol>
+        <symbol id="icon-calendar" viewBox="0 0 22 24">
+            <title>calendar</title>
+            <path d="M1.714 22.286h18.857v-13.714h-18.857v13.714zM6.857 6v-3.857c0-0.241-0.188-0.429-0.429-0.429h-0.857c-0.241 0-0.429 0.188-0.429 0.429v3.857c0 0.241 0.188 0.429 0.429 0.429h0.857c0.241 0 0.429-0.188 0.429-0.429zM17.143 6v-3.857c0-0.241-0.188-0.429-0.429-0.429h-0.857c-0.241 0-0.429 0.188-0.429 0.429v3.857c0 0.241 0.188 0.429 0.429 0.429h0.857c0.241 0 0.429-0.188 0.429-0.429zM22.286 5.143v17.143c0 0.938-0.777 1.714-1.714 1.714h-18.857c-0.938 0-1.714-0.777-1.714-1.714v-17.143c0-0.938 0.777-1.714 1.714-1.714h1.714v-1.286c0-1.179 0.964-2.143 2.143-2.143h0.857c1.179 0 2.143 0.964 2.143 2.143v1.286h5.143v-1.286c0-1.179 0.964-2.143 2.143-2.143h0.857c1.179 0 2.143 0.964 2.143 2.143v1.286h1.714c0.938 0 1.714 0.777 1.714 1.714z"></path>
+        </symbol>
+        <symbol id="icon-user" viewBox="0 0 32 32">
+            <title>user</title>
+            <path d="M18 22.082v-1.649c2.203-1.241 4-4.337 4-7.432 0-4.971 0-9-6-9s-6 4.029-6 9c0 3.096 1.797 6.191 4 7.432v1.649c-6.784 0.555-12 3.888-12 7.918h28c0-4.030-5.216-7.364-12-7.918z"></path>
+        </symbol>
+    </defs>
+</svg>
+<!-- SVG definitions -->
+
+
+<div class="imageCarousel imageCarousel__dots">
+    <div class="carousel-item">
+        <div class="carousel-item-inner" style="background-image: url(../images/jonahs_lunch_picture.jpeg);">
+            <div class="carousel-item-text">
+                <div class="tag-date is-white">29 - 31  June, 2018</div>
+                <div class="tag-category is-blue">Photography</div>
+                <h3>Thought Leadership Lunch</h3>
+            </div>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <div class="carousel-item-inner" style="background-image: url(../images/family_day.png);">
+            <div class="carousel-item-text">
+                <div class="tag-date is-white">29 - 31  June, 2018</div>
+                <div class="tag-category is-blue">Photography</div>
+                <h3>Executive Family Day</h3>
+            </div>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <div class="carousel-item-inner" style="background-image: url(../images/shutterstock_191740094.jpg);">
+            <div class="carousel-item-text">
+                <div class="tag-date is-white">29 - 31  June, 2018</div>
+                <div class="tag-category is-blue">Photography</div>
+                <h3>Hike & Bike at Adobe Summit</h3>
+            </div>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <div class="carousel-item-inner" style="background-image: url(../images/execDinner.jpeg);">
+            <div class="carousel-item-text">
+                <div class="tag-date is-white">29 - 31  June, 2018</div>
+                <div class="tag-category is-blue">Photography</div>
+                <h3>Thought Leadership Lunch</h3>
+            </div>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <div class="carousel-item-inner" style="background-image: url(../images/TLLunch.jpg);">
+            <div class="carousel-item-text">
+                <div class="tag-date is-white">29 - 31  June, 2018</div>
+                <div class="tag-category is-blue">Photography</div>
+                <h3>Thought Leadership Lunch</h3>
+            </div>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <div class="carousel-item-inner" style="background-image: url(../images/adobeSummitPresenter.JPG);">
+            <div class="carousel-item-text">
+                <div class="tag-date is-white">29 - 31  June, 2018</div>
+                <div class="tag-category is-blue">Photography</div>
+                <h3>Thought Leadership Lunch</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../vendor/bootstrap413/js/bootstrap.min.js"></script>
+<script src="js/carouselDots.js"></script>
+<script src="../vendor/slick181/slick/slick.min.js"></script>

@@ -1,0 +1,64 @@
+.aaaContainer {
+    margin:3rem;
+}
+.card-columns{
+    width:50%; /* TO be removed after first deadline*/
+}
+.aaaContainer .card-columns .card{
+    width:15rem;/* TO be removed after first deadline*/
+    border-radius:0px;
+    margin-right:0.25rem;
+    margin-left:0.25rem;
+}
+.aaaContainer .card-columns .card .card-img-top{
+    border-radius: 0px;
+    height:10rem; /* To have uni dimensional cards: affects image*/
+    object-fit:cover;
+}
+.card-body{
+    padding-top:1rem!important;
+    background-color: #263138;
+    color:#fff;
+}
+.card-body small {
+    color:#33DDFF;
+    font-weight:bold;
+    font-size:0.5rem;
+}
+.card-body h5 {
+    font-weight:bold;
+    margin-top:0.5rem;
+}
+.card .cardImgBtn{
+    width: 9rem;
+    height: 2rem;
+    font-size: 0.70rem;
+    background-color: #fff;
+    border: 1px solid #DCDCDC;
+    font-family: Avenir;
+    font-weight: bold;
+    padding-top:0.25rem;
+}
+.card-footer{
+    background-color: #A9A9A9!important;
+    text-align:center;
+    padding:0.45rem!important;
+    border-radius: 0px!important;
+}
+.card-footer small{
+    font-size:0.75rem;
+    font-family: sans-serif;
+    font-weight:bold;
+}
+.card-body-small small{
+    color:darkgray;
+}
+.message{
+    display:none;
+}
+@media (max-width: 992px) {
+.message{ display:block; }
+.card-columns{ display: none; }
+}
+
+/* empty space https://www.quora.com/Is-there-an-alternative-to-non-breaking-space-in-HTML */

@@ -1,0 +1,193 @@
+@color_1: #000;
+@color_2: #A4A4A4;
+@color_3: slategrey;
+@color_4: #C0C0C0;
+@color_5: #fff;
+@font_family_1: Helvetica Neue, Helvetica, Arial, sans-serif;
+@background_color_1: #000;
+@background_color_2: #fff;
+@background_color_3: #F2F2F2;
+
+/* practice.css */
+/*Media Queries*/
+/* Start ==> Custom Checkbox Styles */
+/* Checkbox Container */
+/* Hide the browser's default checkbox */
+/* Create a custom checkbox */
+/* When the checkbox is checked, add a blue background */
+/* Create the checkmark/indicator (hidden when not checked) */
+/* Show the checkmark when checked */
+/* Style the checkmark/indicator */
+/* END <=== Custom Checkbox Styles */
+body {
+	background-color: @background_color_1;
+	margin: 10px;
+	font-family: @font_family_1;
+	background-size: 100% 110%;
+}
+.login {
+	background-color: @background_color_2;
+	border: 5px;
+	border-radius: 1rem;
+	margin: 0 auto;
+	max-width: 35%;
+	.login-inner-checkBox {
+		font-size: 0.75em;
+		color: @color_1;
+		padding-top: 0.25rem;
+		padding-bottom: 1.25rem;
+	}
+	.login-inner-title {
+		font-size: 0.75em;
+		color: @color_1;
+	}
+	.login-inner-label {
+		font-size: 0.75em;
+		color: @color_2;
+	}
+	hr {
+		background-color: @background_color_3;
+		height: 1px;
+		border: 0;
+		max-width: 100%;
+		margin-left: 0px;
+	}
+	.login-inner-text {
+		display:block;
+		width: 100%;
+		line-height: 2em;
+		font-family: @font_family_1;
+		margin-bottom: 0.5em;
+		border-radius: 5px;
+		border: 2px solid #f2f2f2;
+		outline: none;
+		padding-left: 10px;
+	}
+	.login-inner-buttons{
+		max-width:100%;
+	}
+}
+.login-inner {
+	max-width:85%;
+	height:75%;
+	box-sizing: border-box;
+	padding-top: 15px;
+	margin: 15% auto;
+	.signin-button,.forgotpwd-button {
+		height: 30px;
+		background: #fff;
+		border: 1px solid #c0c0c0;
+		border-radius: 20px;
+		color: @color_3;
+		font-family: @font_family_1;
+		font-size: 0.75em;
+		font-weight: bold;
+		cursor: pointer;
+		padding-left: 20px;
+		padding-right: 20px;
+		&:focus {
+			background-color: @background_color_1;
+			color: @color_5;
+			font-weight: bold;
+		}
+	}
+	.login-inner-text {
+		&::placeholder {
+			font-style: italic;
+			font-size: 1em;
+			color: @color_4;
+		}
+		&:focus {
+			&::placeholder {
+				font-style: italic;
+				font-size: 1em;
+				color: @color_1;
+			}
+		}
+	}
+	.login-inner-text {
+		&:focus {
+			border: 1px solid #000;
+			color: @color_1;
+		}
+	}
+	.login-inner-checkBox {
+		display: block;
+		position: relative;
+		padding-left: 1.25rem;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		.rememberme-checkbox {
+			position: absolute;
+			opacity: 0;
+			cursor: pointer;
+			height: 0;
+			width: 0;
+			&:checked {
+				&~.checkmark-span {
+					background-color: @background_color_1;
+					border: 5px;
+					border-radius: 3px;
+					background-color: @background_color_1;
+					&:after {
+						display: block;
+					}
+				}
+			}
+		}
+		.checkmark-span {
+			&:after {
+				left: 4px;
+				top: 2px;
+				width: 2px;
+				height: 5px;
+				border: 0.5px solid white;
+				border-width: 0 2px 2px 0;
+				-webkit-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				transform: rotate(45deg);
+			}
+		}
+	}
+	.checkmark-span {
+		box-sizing: border-box;
+		position: absolute;
+		top: 0.55rem;
+		left: 0;
+		height: 0.8rem;
+		width: 0.8rem;
+		background-color: @background_color_2;
+		border: 1px solid #000;
+		border-radius: 2px;
+		&:after {
+			content: "";
+			position: absolute;
+			display: none;
+		}
+	}
+}
+@media only screen and (min-width : 150px) and (max-width : 530px) {
+	.login-inner {
+		h3 {
+			text-align: center;
+			margin: 0;
+		}
+		.login-inner-buttons {
+			.forgotpwd-button {
+					margin-left: 5px;
+			}
+		}
+	}
+	.sign-up {
+		margin: 10px 0;
+	}
+	.no-access {
+		margin: 10px 0;
+	}
+	.signin-button {
+		margin-bottom: 10px;
+	}
+}
